@@ -14,14 +14,10 @@ export default function Industries() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-16 text-center">
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
+      <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }}>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Industries We Serve</h1>
         <p className="text-lg text-gray-500 mb-16 max-w-2xl mx-auto">
-          Muskan Career Solutions has deep expertise in connecting specialized talent with businesses across a wide variety of sectors.
+          Muskin Career Solutions has deep expertise in connecting specialized talent with businesses across a wide variety of sectors.
         </p>
       </motion.div>
 

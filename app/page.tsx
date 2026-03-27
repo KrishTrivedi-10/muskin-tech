@@ -13,11 +13,15 @@ export default function Home() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="pt-12 px-6 text-center max-w-4xl mx-auto"
       >
+        {/* Added your new tagline here! */}
+        <span className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4 block">
+          Smart People, Smart Solution
+        </span>
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-gray-900">
           Connecting Top Talent with <span className="text-blue-600">Leading Companies</span>
         </h1>
         <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-          Muskan Career Solutions provides reliable staffing and recruitment solutions across IT and Non-IT sectors, helping businesses grow faster.
+          Muskin Career Solutions provides reliable staffing and recruitment solutions across IT and Non-IT sectors, helping businesses grow faster.
         </p>
         <div className="flex justify-center">
           <Link href="/contact" className="bg-blue-600 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-700 transition shadow-md shadow-blue-200">
@@ -34,7 +38,7 @@ export default function Home() {
         viewport={{ once: true, amount: 0.2 }} 
         className="px-6 max-w-7xl mx-auto w-full"
       >
-        <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Our Services at Muskan Career Solutions</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Our Services at Muskin Career Solutions</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { title: "IT Staffing", desc: "Skilled IT professionals for contract and full-time roles." },
@@ -60,7 +64,7 @@ export default function Home() {
       >
         {/* Subtle glass effect behind the text for premium feel */}
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl font-bold mb-10">Why Choose Muskan Career Solutions?</h2>
+          <h2 className="text-3xl font-bold mb-10">Why Choose Muskin Career Solutions?</h2>
           <div className="grid sm:grid-cols-2 gap-4 text-left">
             {[
               "Pre-screened and qualified candidates", 
