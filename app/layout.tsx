@@ -18,23 +18,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen bg-gray-50/30 relative`}>
+        
         {/* Navbar */}
         <nav className="fixed w-full z-50 bg-white/60 backdrop-blur-xl saturate-150 border-b border-gray-200/50 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-y-3">
-            <Link href="/" className="flex items-center gap-2 group">
-              {/* Logo Implementation - UPDATED TO JPEG */}
-              <div className="relative w-10 h-10 flex-shrink-0">
-                <img 
-                  src="/logo.jpeg" 
-                  alt="Muskin Logo" 
-                  className="object-contain w-full h-full"
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg md:text-xl font-bold tracking-tighter text-blue-600 leading-none">Muskin Career Solutions</span>
-                <span className="text-[10px] font-medium text-gray-500 uppercase tracking-widest mt-1 hidden sm:block">Smart People, Smart Solution</span>
-              </div>
-            </Link>
+           <Link href="/" className="flex items-center gap-2 group">
+  <div className="relative w-10 h-10 flex-shrink-0">
+    <img 
+      src="/logo.jpeg" 
+      alt="Muskin Logo" 
+      className="object-contain w-full h-full"
+    />
+  </div>
+  <div className="flex flex-col">
+    <div className="text-lg md:text-xl font-bold tracking-tighter leading-tight">
+      <span className="text-blue-600">Muskin Career</span> <br /> 
+      <span className="text-black">Solutions</span>
+    </div>
+    <span className="text-[10px] font-medium text-gray-500 uppercase tracking-widest mt-1 hidden sm:block">
+      Smart People, Smart Solution
+    </span>
+  </div>
+</Link>
+
             
             <div className="flex flex-wrap justify-center gap-4 font-medium text-gray-600 text-sm w-full order-last md:order-none md:w-auto">
               <Link href="/" className="hover:text-blue-600 transition">Home</Link>
@@ -72,9 +78,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <h4 className="font-semibold text-gray-900 mb-4">Connect</h4>
               <div className="flex flex-col gap-3 text-gray-500 text-sm">
-                <span className="flex items-center gap-2"><MapPin size={16} className="text-blue-600"/> Sheridan, WY 82801</span>
-                <span className="flex items-center gap-2"><Mail size={16} className="text-blue-600"/> contact@muskin.com</span>
-                <span className="flex items-center gap-2"><Phone size={16} className="text-blue-600"/> +91 XXXXX XXXXX</span>
+                <span className="flex items-center gap-2">
+                  <MapPin size={16} className="text-blue-600"/> 
+                  Sheridan, WY 82801
+                </span>
+                
+                {/* Clickable Professional Email */}
+                <span className="flex items-center gap-2">
+                  <Mail size={16} className="text-blue-600"/> 
+                  <a 
+                    href="mailto:info@muskincareersolutions.com" 
+                    className="hover:text-blue-600 transition-colors"
+                  >
+                    info@muskincareersolutions.com
+                  </a>
+                </span>
+
+                {/* Clickable Phone Number */}
+                <span className="flex items-center gap-2">
+                  <Phone size={16} className="text-blue-600"/> 
+                  <a href="tel:+91XXXXXXXXXX" className="hover:text-blue-600 transition">
+                    +91 XXXXX XXXXX
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -82,6 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             © {new Date().getFullYear()} Muskin Career Solutions. All rights reserved.
           </div>
         </footer>
+
       </body>
     </html>
   );

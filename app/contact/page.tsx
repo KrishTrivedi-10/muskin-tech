@@ -18,7 +18,7 @@ export default function Contact() {
           </div>
           <div className="flex items-center gap-4 text-base text-gray-700">
             <div className="bg-blue-50 p-3 rounded-full text-blue-600"><Mail size={20}/></div>
-            <span>contact@muskin.com</span>
+            <span>info@muskincareeersolutions.com</span>
           </div>
           <div className="flex items-center gap-4 text-base text-gray-700">
             <div className="bg-blue-50 p-3 rounded-full text-blue-600"><Phone size={20}/></div>
